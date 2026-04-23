@@ -9,40 +9,46 @@ import { JsonSchemaFormService } from '@zajsf/core';
     template: `
     <div
       [class]="options?.labelHtmlClass || ''">
-      <a *ngFor="let item of layoutNode?.items; let i = index"
+      @for (item of layoutNode?.items; track item; let i = $index) {
+        <a
         [class]="(options?.itemLabelHtmlClass || '') + (selectedItem === i ?
           (' ' + (options?.activeClass || '') + ' ' + (options?.style?.selected || '')) :
           (' ' + options?.style?.unselected))"
-        >
-        <span *ngIf="showAddTab || item.type !== '$ref'"
+          >
+          @if (showAddTab || item.type !== '$ref') {
+            <span
         [class]="(selectedItem === i ? (' ' + options?.activeClass + ' ' + options?.style?.selected) :
         (' ' + options?.style?.unselected))"
-      [innerHTML]="setTabTitle(item, i)"
-      (click)="select(i)"></span>
-      </a>
-
+              [innerHTML]="setTabTitle(item, i)"
+            (click)="select(i)"></span>
+          }
+        </a>
+      }
+    
     </div>
-
+    
     <!--
     <div class="tabs tabs-boxed">
-  <a class="tab">Tab 1</a> 
-  <a class="tab tab-active">Tab 2</a> 
-  <a class="tab">Tab 3</a>
-</div>
--->
-
-    <div *ngFor="let layoutItem of layoutNode?.items; let i = index"
-      [class]="options?.htmlClass || ''">
-
-      <select-framework-widget *ngIf="selectedItem === i"
+      <a class="tab">Tab 1</a>
+      <a class="tab tab-active">Tab 2</a>
+      <a class="tab">Tab 3</a>
+    </div>
+    -->
+    
+    @for (layoutItem of layoutNode?.items; track layoutItem; let i = $index) {
+      <div
+        [class]="options?.htmlClass || ''">
+        @if (selectedItem === i) {
+          <select-framework-widget
         [class]="(options?.fieldHtmlClass || '') +
           ' ' + (options?.activeClass || '') +
           ' ' + (options?.style?.selected || '')"
-        [dataIndex]="layoutNode?.dataType === 'array' ? (dataIndex || []).concat(i) : dataIndex"
-        [layoutIndex]="(layoutIndex || []).concat(i)"
-        [layoutNode]="layoutItem"></select-framework-widget>
-
-    </div>`,
+            [dataIndex]="layoutNode?.dataType === 'array' ? (dataIndex || []).concat(i) : dataIndex"
+            [layoutIndex]="(layoutIndex || []).concat(i)"
+          [layoutNode]="layoutItem"></select-framework-widget>
+        }
+      </div>
+    }`,
     styles: [` a { cursor: pointer; } `],
     standalone: false
 })
