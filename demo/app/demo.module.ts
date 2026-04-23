@@ -1,4 +1,4 @@
-import { HttpClientModule } from '@angular/common/http';
+import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
@@ -29,26 +29,20 @@ import { routes } from './demo.routes';
 
 
 
-@NgModule({
-  declarations: [AceEditorDirective, DemoComponent, DemoRootComponent],
-  imports: [
-    BrowserModule, BrowserAnimationsModule, FormsModule,
-    HttpClientModule, MatButtonModule, MatCardModule, MatCheckboxModule,
-    MatIconModule, MatMenuModule, MatSelectModule, MatToolbarModule,
-    RouterModule.forRoot(routes, {}),
-    Bootstrap4FrameworkModule,
-    Bootstrap3FrameworkModule,
-    MaterialDesignFrameworkModule,
-    DaisyUIFrameworkModule,
-    Bootstrap5FrameworkModule,
-    CssFrameworkModule,
-    JsonSchemaFormModule
-  ],
-  providers:[{ provide: REMOVE_STYLES_ON_COMPONENT_DESTROY, useValue: true }
-    //uncomment to disable daisyui class name prefixing
-     ,{ provide: DUIOPTIONS, useValue: {classPrefix:environment.cssClassPrefix} }
-  ],
-  bootstrap: [DemoRootComponent]
-})
+@NgModule({ declarations: [AceEditorDirective, DemoComponent, DemoRootComponent],
+    bootstrap: [DemoRootComponent], imports: [BrowserModule, BrowserAnimationsModule, FormsModule,
+        MatButtonModule, MatCardModule, MatCheckboxModule,
+        MatIconModule, MatMenuModule, MatSelectModule, MatToolbarModule,
+        RouterModule.forRoot(routes, {}),
+        Bootstrap4FrameworkModule,
+        Bootstrap3FrameworkModule,
+        MaterialDesignFrameworkModule,
+        DaisyUIFrameworkModule,
+        Bootstrap5FrameworkModule,
+        CssFrameworkModule,
+        JsonSchemaFormModule], providers: [{ provide: REMOVE_STYLES_ON_COMPONENT_DESTROY, useValue: true }
+        //uncomment to disable daisyui class name prefixing
+        ,
+        { provide: DUIOPTIONS, useValue: { classPrefix: environment.cssClassPrefix } }, provideHttpClient(withInterceptorsFromDi())] })
 
 export class DemoModule { }

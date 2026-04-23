@@ -564,7 +564,7 @@ function fixNestedArrayLayout(options: any) {
           builtLayout: item,
           indices: indices,
           indexPos: indexPos,
-          parentDataPointer: builtLayout.dataPointer || parentDataPointer
+          parentDataPointer: item.dataPointer || parentDataPointer
         })
       })
       return;
