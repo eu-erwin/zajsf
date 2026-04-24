@@ -4,7 +4,7 @@ import {
     JsonSchemaFormModule,
     JsonSchemaFormService,
     WidgetLibraryModule
-} from '@zajsf/core';
+} from '@stulz/ajsf-core';
 import { Bootstrap4FrameworkComponent } from './bootstrap4-framework.component';
 
 describe('FwBootstrap4Component', () => {

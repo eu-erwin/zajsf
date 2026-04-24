@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { JsonSchemaFormService } from '@zajsf/core';
+import { JsonSchemaFormService } from '@stulz/ajsf-core';
 
 
 
@@ -24,9 +24,9 @@ import { JsonSchemaFormService } from '@zajsf/core';
           }
         </a>
       }
-    
+
     </div>
-    
+
     <!--
     <div class="tabs tabs-boxed">
       <a class="tab">Tab 1</a>
@@ -34,7 +34,7 @@ import { JsonSchemaFormService } from '@zajsf/core';
       <a class="tab">Tab 3</a>
     </div>
     -->
-    
+
     @for (layoutItem of layoutNode?.items; track layoutItem; let i = $index) {
       <div
         [class]="options?.htmlClass || ''">

@@ -2,7 +2,7 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { Framework, FrameworkLibraryService, JsonSchemaFormModule, JsonSchemaFormService, WidgetLibraryModule, WidgetLibraryService } from '@zajsf/core';
 
-import { CssFrameworkModule } from '@zajsf/cssframework';
+import { CssFrameworkModule } from '@stulz/ajsf-cssframework';
 import { DaisyUIFrameworkComponent } from './daisyui-framework.component';
 import { DaisyUIFrameworkComponentPrefixed } from './daisyui-framework.prefixed.component';
 import { DaisyUIFramework } from './daisyui.framework';
@@ -32,7 +32,7 @@ import { DaisyUITabsComponent } from './widgets/daisyui-tabs.component';
     JsonSchemaFormService,
     FrameworkLibraryService,
     WidgetLibraryService,
-    
+
     { provide: Framework, useClass: DaisyUIFramework, multi: true }
 ]
 })

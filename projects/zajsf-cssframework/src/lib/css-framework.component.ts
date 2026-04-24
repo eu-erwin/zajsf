@@ -1,5 +1,5 @@
 import { ChangeDetectorRef, Component, Input, OnChanges, OnDestroy, OnInit, ViewEncapsulation } from '@angular/core';
-import { FrameworkLibraryService, JsonSchemaFormService, addClasses, inArray } from '@zajsf/core';
+import { FrameworkLibraryService, JsonSchemaFormService, addClasses, inArray } from '@stulz/ajsf-core';
 import _, { cloneDeep, map } from 'lodash';
 import { Subscription } from 'rxjs';
 import { css_fw } from './css-framework.defs';
@@ -62,14 +62,14 @@ export class CssFrameworkComponent implements OnInit, OnChanges,OnDestroy {
         return;
       }
       if(_.isArray(wstyle)){
-        
+
         flattened[wkey]=wstyle.join(" ");
       }
       if(_.isObject(wstyle)){//is csscategories
           flattened[wkey]=flattened[wkey]||{};
         Object.keys(wstyle).forEach(catName=>{
           let cssCat=wstyle[catName];
-          
+
           if(_.isArray(cssCat)){
             flattened[wkey][catName]=cssCat.join(" ");
           }else{
@@ -117,7 +117,7 @@ frameworkThemeSubs:Subscription;
     /*@Inject(CSS_FRAMEWORK_CFG ) fwcfg: css_fw.frameworkcfg*/
 
   ) {
-    
+
     let activeFramework:any=this.jsfFLService.activeFramework;
     let fwcfg=activeFramework.config||{};
     this.widgetStyles = Object.assign(this.defaultStyling,fwcfg.widgetstyles);
@@ -127,7 +127,7 @@ frameworkThemeSubs:Subscription;
     this.frameworkThemeSubs=cssFWService.frameworkTheme$.subscribe(newTheme=>{
         this.theme=newTheme;
     })
- 
+
   }
 
   ngOnDestroy(): void {
@@ -196,7 +196,7 @@ frameworkThemeSubs:Subscription;
       this.options.htmlClass =
         addClasses(this.options.htmlClass, 'schema-form-' + this.layoutNode.type);
 
-      
+
       if (this.layoutNode.type === 'array') {
         this.options.htmlClass = addClasses(this.options.htmlClass, this.widgetStyles.__array__.htmlClass);
       } else if (this.layoutNode.arrayItem && this.layoutNode.type !== '$ref') {
@@ -204,7 +204,7 @@ frameworkThemeSubs:Subscription;
       } else {
         this.options.htmlClass = addClasses(this.options.htmlClass, this.widgetStyles.__form_group__.htmlClass);
       }
-      
+
 
       /*
       this.options.htmlClass =
@@ -223,7 +223,7 @@ addClasses(this.options.htmlClass, this.widgetStyles.array.htmlClass):
   addClasses(this.options.htmlClass, this.widgetStyles.__array_item_nonref__.htmlClass):
   addClasses(this.options.htmlClass, this.widgetStyles.__form_group__.htmlClass);
 */
-          
+
       this.widgetOptions.htmlClass = '';
       this.options.labelHtmlClass =
         addClasses(this.options.labelHtmlClass, this.widgetStyles.__control_label__.labelHtmlClass);

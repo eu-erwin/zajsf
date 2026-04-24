@@ -1,7 +1,7 @@
 {
   "name": "demo",
-  "version": "17.2.5-alpha.2",
-  "author": "https://github.com/zahmo/zajsf/graphs/contributors",
+  "version": "21.2.10-dev",
+  "author": "https://github.com/stulzdigital/zajsf/graphs/contributors",
   "description": "Angular JSON Schema Form builder Demo",
   "engines": {
     "node": ">=16.13.2",
@@ -10,31 +10,14 @@
   "keywords": [
     "Angular",
     "ng",
-    "Angular15",
-    "Angular 15",
-    "Angular16",
-    "Angular 16",
-    "Angular17",
-    "Angular 17",
-    "ng15",
-    "ng16",
-    "ng17",
+    "Angular21",
+    "Angular 21",
+    "ng21",
     "JSON Schema",
     "form",
     "forms",
     "form builder",
     "form themes",
-    "material",
-    "angular material",
-    "material design",
-    "bootstrap",
-    "bootstrap 3",
-    "bootstrap 4",
-    "bootstrap 5",
-    "daisyui",
-    "tailwind",
-    "tailwindcss",
-    "tailwind css",
     "ajsf",
     "zajsf",
     "angular json schema form"
@@ -42,12 +25,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zahmo/zajsf"
+    "url": "git+https://github.com/stulzdigital/zajsf"
   },
   "bugs": {
-    "url": "https://github.com/zahmo/zajsf"
+    "url": "https://github.com/stulzdigital/zajsf"
   },
-  "homepage": "https://github.com/zahmo/zajsf#readme",
+  "homepage": "https://github.com/stulzdigital/zajsf#readme",
   "scripts": {
     "ng": "ng",
     "prestart": "npm run build:libs",

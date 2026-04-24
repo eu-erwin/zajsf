@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { AbstractControl } from '@angular/forms';
-import { JsonSchemaFormService, buildTitleMap } from '@zajsf/core';
+import { JsonSchemaFormService, buildTitleMap } from '@stulz/ajsf-core';
 
 
 @Component({

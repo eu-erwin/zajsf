@@ -1,5 +1,5 @@
 /*
- * Public API Surface of @zajsf/material-framework
+ * Public API Surface of @stulz/ajsf-material-framework
  */
 
 export * from './lib/material-design-framework.component';

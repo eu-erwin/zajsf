@@ -1,20 +1,14 @@
 {
-    "name": "@zajsf/cssframework",
-    "version": "17.2.5-alpha.2",
+    "name": "@stulz/ajsf-cssframework",
+    "version": "21.2.10-dev",
     "description": "Angular JSON Schema Form builder cssframework",
-    "author": "https://github.com/zahmo/zajsf/graphs/contributors",
+    "author": "https://github.com/stulzdigital/zajsf/graphs/contributors",
     "keywords": [
         "Angular",
         "ng",
-        "Angular15",
-        "Angular 15",
-        "Angular16",
-        "Angular 16",
-        "Angular17",
-        "Angular 17",
-        "ng15",
-        "ng16",
-        "ng17",
+        "Angular21",
+        "Angular 21",
+        "ng21",
         "JSON Schema",
         "form",
         "forms",
@@ -27,19 +21,19 @@
     "license": "MIT",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/zahmo/zajsf"
+        "url": "git+https://github.com/stulzdigital/zajsf"
     },
     "bugs": {
-        "url": "https://github.com/zahmo/zajsf/issues"
+        "url": "https://github.com/stulzdigital/zajsf/issues"
     },
     "private": false,
     "peerDependencies": {
-        "@angular/common": "^17.0.0",
-        "@angular/core": "^17.0.0"
+        "@angular/common": "^21.2.8",
+        "@angular/core": "^21.2.8"
     },
     "dependencies": {
         "tslib": "^2.3.0",
-        "@zajsf/core": "~17.2.5-alpha.2"
+        "@stulz/ajsf-core": "21.2.10-dev"
     },
     "devDependencies": {
         "@types/lodash-es": "^4.17.6"

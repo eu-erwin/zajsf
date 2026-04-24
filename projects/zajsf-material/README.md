@@ -1,4 +1,4 @@
-# @zajsf/material
+# @stulz/ajsf-material
 
 This module is a dependency of the [zajsf project][npm_core_ver] and is meant to work as a framework installation module for using Angular Material Design in the forms.
 
@@ -8,18 +8,18 @@ If you are unfamiliar with with the zajsf project, it is highly recommended to
 first have a look at the [@zajsf pages][npm_core_ver] for examples, demos, options and documentation.
 
 ```shell
-npm install @zajsf/core@latest @zajsf/cssframework@latest @zajsf/material@latest
+npm install @stulz/ajsf-core@latest @stulz/ajsf-cssframework@latest @stulz/ajsf-material@latest
 ```
 
 With YARN, run the following:
 
 ```shell
-yarn add @zajsf/core@latest @zajsf/cssframework@latest @zajsf/material@latest
+yarn add @stulz/ajsf-core@latest @stulz/ajsf-cssframework@latest @stulz/ajsf-material@latest
 ```
 
 include the themes scss in your applications sass file(typically "styles.scss" under "src" folder -see angular docs for more details) 
 ```scss
-@import "node_modules/@zajsf/material/assets/material-design-themes.scss";
+@import "node_modules/@stulz/ajsf-material/assets/material-design-themes.scss";
 ```
 
 Then import `MaterialDesignFrameworkModule` in your main application module if you want to use `material-angular` UI, like this:
@@ -28,7 +28,7 @@ Then import `MaterialDesignFrameworkModule` in your main application module if y
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { MaterialDesignFrameworkModule } from '@zajsf/material';
+import { MaterialDesignFrameworkModule } from '@stulz/ajsf-material';
 
 import { AppComponent } from './app.component';
 
@@ -77,7 +77,7 @@ The possible values for this framework are:
 * `pink-bluegrey` for the pink & blue-grey theme.
 
 the list of available themes can also be gotten using the 
-FrameworkLibraryService(found in '@zajsf/core'): 
+FrameworkLibraryService(found in '@stulz/ajsf-core'): 
  ```typescript
  getFrameworkThemes()
  ``` 
@@ -100,7 +100,7 @@ a css class
 
 ```
 after making the css available, the theme will need to be registered using the  
-FrameworkLibraryService(found in '@zajsf/core'):
+FrameworkLibraryService(found in '@stulz/ajsf-core'):
 for example 
 
 ```typescript
@@ -119,15 +119,15 @@ for example
 
 ## Code scaffolding
 
-Run `ng generate component component-name --project @zajsf/material` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project @zajsf/material`.
-> Note: Don't forget to add `--project @zajsf/material` or else it will be added to the default project in your `angular.json` file.
+Run `ng generate component component-name --project @stulz/ajsf-material` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project @stulz/ajsf-material`.
+> Note: Don't forget to add `--project @stulz/ajsf-material` or else it will be added to the default project in your `angular.json` file.
 
 ## Build
 
-Run `ng build @zajsf/material` to build the project. The build artifacts will be stored in the `dist/` directory.
+Run `ng build @stulz/ajsf-material` to build the project. The build artifacts will be stored in the `dist/` directory.
 
 ## Running unit tests
 
-Run `ng test @zajsf/material` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Run `ng test @stulz/ajsf-material` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-[npm_core_ver]:https://www.npmjs.com/package/@zajsf/core
+[npm_core_ver]:https://www.npmjs.com/package/@stulz/ajsf-core

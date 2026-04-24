@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { CssFramework, CssframeworkService } from '@zajsf/cssframework';
+import { CssFramework, CssframeworkService } from '@stulz/ajsf-cssframework';
 import { cssFrameworkCfgMaterialDesign } from './material-design-cssframework';
 import {
   FlexLayoutRootComponent,

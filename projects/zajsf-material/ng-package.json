@@ -1,13 +1,13 @@
 {
     "$schema": "../../node_modules/ng-packagr/ng-package.schema.json",
-    "dest": "../../dist/@zajsf/material",
+    "dest": "../../dist/stulz/ajsf-material",
     "lib": {
         "entryFile": "src/public_api.ts"
     },
     "assets": ["./assets"],
     "allowedNonPeerDependencies": [
         "lodash-es",
-        "@zajsf/core",
-        "@zajsf/cssframework"
+        "@stulz/ajsf-core",
+        "@stulz/ajsf-cssframework"
     ]
 }

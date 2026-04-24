@@ -1,27 +1,19 @@
 {
-    "name": "@zajsf/bootstrap3",
-    "version": "17.2.5-alpha.2",
+    "name": "@stulz/ajsf-bootstrap3",
+    "version": "21.2.10-dev",
     "description": "Angular JSON Schema Form builder using Bootstrap 3 UI",
-    "author": "https://github.com/zahmo/zajsf/graphs/contributors",
+    "author": "https://github.com/stulzdigital/zajsf/graphs/contributors",
     "keywords": [
         "Angular",
         "ng",
-        "Angular15",
-        "Angular 15",
-        "Angular16",
-        "Angular 16",
-        "Angular17",
-        "Angular 17",
-        "ng15",
-        "ng16",
-        "ng17",
+        "Angular21",
+        "Angular 21",
+        "ng21",
         "JSON Schema",
         "form",
         "forms",
         "form builder",
         "form themes",
-        "bootstrap",
-        "bootstrap 3",
         "ajsf",
         "zajsf",
         "angular json schema form"
@@ -29,21 +21,21 @@
     "license": "MIT",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/zahmo/zajsf"
+        "url": "git+https://github.com/stulzdigital/zajsf"
     },
     "bugs": {
-        "url": "https://github.com/zahmo/zajsf/issues"
+        "url": "https://github.com/stulzdigital/zajsf/issues"
     },
     "private": false,
     "dependencies": {
         "lodash-es": "~4.17.21",
-        "@zajsf/core": "~17.2.5-alpha.2",
-        "@zajsf/cssframework": "~17.2.5-alpha.2",
+        "@stulz/ajsf-core": "^21.2.10-dev",
+        "@stulz/ajsf-cssframework": "^21.2.10-dev",
         "tslib": "^2.0.0"
     },
     "peerDependencies": {
-        "@angular/common": ">=17.0.0",
-        "@angular/core": ">=17.0.0"
+        "@angular/common": ">=21.2.8",
+        "@angular/core": ">=21.2.8"
     },
     "devDependencies": {
         "@types/lodash-es": "^4.17.3"

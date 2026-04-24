@@ -1,4 +1,4 @@
-import { css_fw } from "@zajsf/cssframework";
+import { css_fw } from "@stulz/ajsf-cssframework";
 
 export const cssFrameworkCfgBootstrap4:css_fw.frameworkcfg={
     "name": "bootstrap-4",

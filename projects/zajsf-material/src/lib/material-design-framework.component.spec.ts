@@ -4,7 +4,7 @@ import {
     JsonSchemaFormModule,
     JsonSchemaFormService,
     WidgetLibraryModule
-} from '@zajsf/core';
+} from '@stulz/ajsf-core';
 import { MaterialDesignFrameworkComponent } from './material-design-framework.component';
 
 describe('FwBootstrap4Component', () => {

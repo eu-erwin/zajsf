@@ -1,14 +1,14 @@
 {
     "$schema": "../../node_modules/ng-packagr/ng-package.schema.json",
-    "dest": "../../dist/@zajsf/daisyui",
+    "dest": "../../dist/stulz/ajsf-daisyui",
     "lib": {
         "entryFile": "src/public-api.ts"
     },
     "assets": ["./assets"],
     "allowedNonPeerDependencies": [
         "lodash-es",
-        "@zajsf/core",
-        "@zajsf/cssframework",
+        "@stulz/ajsf-core",
+        "@stulz/ajsf-cssframework",
         "daisyui"
     ]
 }

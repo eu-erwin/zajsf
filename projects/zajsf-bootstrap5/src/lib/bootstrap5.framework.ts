@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { CssFramework, CssframeworkService } from '@zajsf/cssframework';
+import { CssFramework, CssframeworkService } from '@stulz/ajsf-cssframework';
 import { cssFrameworkCfgBootstrap5 } from './bootstrap5-cssframework';
 import { Bootstrap5FrameworkComponent } from './bootstrap5-framework.component';
 
@@ -8,7 +8,7 @@ import { Bootstrap5FrameworkComponent } from './bootstrap5-framework.component';
 
 @Injectable()
 export class Bootstrap5Framework extends CssFramework {
-  
+
   framework = Bootstrap5FrameworkComponent;
 
   constructor(public cssFWService:CssframeworkService){

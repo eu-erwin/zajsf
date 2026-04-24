@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { CssFramework, CssframeworkService } from '@zajsf/cssframework';
+import { CssFramework, CssframeworkService } from '@stulz/ajsf-cssframework';
 import { cssFrameworkCfgBootstrap3 } from './bootstrap3-cssframework';
 import { Bootstrap3FrameworkComponent } from './bootstrap3-framework.component';
 

@@ -1,10 +1,8 @@
 import { Inject, Injectable } from '@angular/core';
-import { Framework } from '@zajsf/core';
+import { Framework } from '@stulz/ajsf-core';
 import { CssFrameworkComponent } from './css-framework.component';
 import { CSS_FRAMEWORK_CFG, css_fw } from './css-framework.defs';
 import { CssframeworkService } from './css-framework.service';
-
-
 
 @Injectable()
 export class CssFramework extends Framework {
@@ -14,7 +12,7 @@ export class CssFramework extends Framework {
   config:css_fw.frameworkcfg
   constructor(@Inject(CSS_FRAMEWORK_CFG ) cfg:css_fw.frameworkcfg,public cssFWService:CssframeworkService){
         super();
-        
+
         this.name=cfg.name;
         this.text=cfg.text||this.name;
         this.stylesheets=cfg.stylesheets;
@@ -25,7 +23,7 @@ export class CssFramework extends Framework {
   getActiveTheme():css_fw.themeKV{
     let activeRequestedThemeName=this.cssFWService.getActiveRequestedTheme();
     let frameWorkThemes=this.config?.widgetstyles?.__themes__;
-    
+
     let theme=frameWorkThemes && frameWorkThemes[0]
     if(activeRequestedThemeName){//if not set return first theme in config;
       theme={name:activeRequestedThemeName,text:activeRequestedThemeName};
@@ -52,7 +50,7 @@ export class CssFramework extends Framework {
       if(!overwrite){
         return false;
       }
-      
+
     }
     if(!matchedThemes || matchedThemes.length==0){
       let cfg:any=this.config

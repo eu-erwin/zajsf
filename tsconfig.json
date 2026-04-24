@@ -23,47 +23,47 @@
       "lodash/*": [
         "node_modules/@types/lodash-es/*"
       ],
-      "@zajsf/core": [
-        "dist/@zajsf/core"
+      "@stulz/ajsf-core": [
+        "dist/stulz/ajsf-core"
       ],
-      "@zajsf/core/*": [
-        "dist/@zajsf/core/*"
+      "@stulz/ajsf-core/*": [
+        "dist/stulz/ajsf-core/*"
       ],
-      "@zajsf/bootstrap3": [
-        "dist/@zajsf/bootstrap3"
+      "@stulz/ajsf-bootstrap3": [
+        "dist/stulz/ajsf-bootstrap3"
       ],
-      "@zajsf/bootstrap3/*": [
-        "dist/@zajsf/bootstrap3/*"
+      "@stulz/ajsf-bootstrap3/*": [
+        "dist/stulz/ajsf-bootstrap3/*"
       ],
-      "@zajsf/bootstrap4": [
-        "dist/@zajsf/bootstrap4"
+      "@stulz/ajsf-bootstrap4": [
+        "dist/stulz/ajsf-bootstrap4"
       ],
-      "@zajsf/bootstrap4/*": [
-        "dist/@zajsf/bootstrap4/*"
+      "@stulz/ajsf-bootstrap4/*": [
+        "dist/stulz/ajsf-bootstrap4/*"
       ],
-      "@zajsf/bootstrap5": [
-        "dist/@zajsf/bootstrap5"
+      "@stulz/ajsf-bootstrap5": [
+        "dist/stulz/ajsf-bootstrap5"
       ],
-      "@zajsf/bootstrap5/*": [
-        "dist/@zajsf/bootstrap5/*"
+      "@stulz/ajsf-bootstrap5/*": [
+        "dist/stulz/ajsf-bootstrap5/*"
       ],
-      "@zajsf/material": [
-        "dist/@zajsf/material"
+      "@stulz/ajsf-material": [
+        "dist/stulz/ajsf-material"
       ],
-      "@zajsf/material/*": [
-        "dist/@zajsf/material/*"
+      "@stulz/ajsf-material/*": [
+        "dist/stulz/ajsf-material/*"
       ],
-      "@zajsf/daisyui": [
-        "dist/@zajsf/daisyui"
+      "@stulz/ajsf-daisyui": [
+        "dist/stulz/ajsf-daisyui"
       ],
-      "@zajsf/daisyui/*": [
-        "dist/@zajsf/daisyui/*"
+      "@stulz/ajsf-daisyui/*": [
+        "dist/stulz/ajsf-daisyui/*"
       ],
-      "@zajsf/cssframework": [
-        "dist/@zajsf/cssframework"
+      "@stulz/ajsf-cssframework": [
+        "dist/stulz/ajsf-cssframework"
       ],
-      "@zajsf/cssframework/*": [
-        "dist/@zajsf/cssframework/*"
+      "@stulz/ajsf-cssframework/*": [
+        "dist/stulz/ajsf-cssframework/*"
       ]
     },
     "useDefineForClassFields": false

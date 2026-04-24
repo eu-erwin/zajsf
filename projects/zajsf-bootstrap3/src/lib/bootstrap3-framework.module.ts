@@ -7,8 +7,8 @@ import {
     JsonSchemaFormService,
     WidgetLibraryModule,
     WidgetLibraryService
-} from '@zajsf/core';
-import { CssFrameworkModule } from '@zajsf/cssframework';
+} from '@stulz/ajsf-core';
+import { CssFrameworkModule } from '@stulz/ajsf-cssframework';
 import { Bootstrap3FrameworkComponent } from './bootstrap3-framework.component';
 import { Bootstrap3Framework } from './bootstrap3.framework';
 

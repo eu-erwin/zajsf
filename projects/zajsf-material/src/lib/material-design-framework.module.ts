@@ -28,8 +28,8 @@ import {
     JsonSchemaFormModule,
     JsonSchemaFormService,
     WidgetLibraryModule, WidgetLibraryService
-} from '@zajsf/core';
-import { CssFrameworkModule } from '@zajsf/cssframework';
+} from '@stulz/ajsf-core';
+import { CssFrameworkModule } from '@stulz/ajsf-cssframework';
 import { MaterialDesignFramework } from './material-design.framework';
 import { MATERIAL_FRAMEWORK_COMPONENTS } from './widgets/public_api';
 

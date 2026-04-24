@@ -108,7 +108,7 @@
                 }
             }
         },
-        "@zajsf/core": {
+        "@stulz/ajsf-core": {
             "root": "projects/zajsf-core",
             "sourceRoot": "projects/zajsf-core/src",
             "projectType": "library",
@@ -136,7 +136,7 @@
                 }
             }
         },
-        "@zajsf/bootstrap4": {
+        "@stulz/ajsf-bootstrap4": {
             "projectType": "library",
             "root": "projects/zajsf-bootstrap4",
             "sourceRoot": "projects/zajsf-bootstrap4/src",
@@ -165,7 +165,7 @@
                 }
             }
         },
-        "@zajsf/bootstrap3": {
+        "@stulz/ajsf-bootstrap3": {
             "projectType": "library",
             "root": "projects/zajsf-bootstrap3",
             "sourceRoot": "projects/zajsf-bootstrap3/src",
@@ -193,7 +193,7 @@
                 }
             }
         },
-        "@zajsf/material": {
+        "@stulz/ajsf-material": {
             "projectType": "library",
             "root": "projects/zajsf-material",
             "sourceRoot": "projects/zajsf-material/src",
@@ -221,7 +221,7 @@
                 }
             }
         },
-        "@zajsf/daisyui": {
+        "@stulz/ajsf-daisyui": {
             "projectType": "library",
             "root": "projects/zajsf-daisyui",
             "sourceRoot": "projects/zajsf-daisyui/src",
@@ -254,7 +254,7 @@
                 }
             }
         },
-        "@zajsf/cssframework": {
+        "@stulz/ajsf-cssframework": {
             "projectType": "library",
             "root": "projects/zajsf-cssframework",
             "sourceRoot": "projects/zajsf-cssframework/src",
@@ -287,7 +287,7 @@
                 }
             }
         },
-        "@zajsf/bootstrap5": {
+        "@stulz/ajsf-bootstrap5": {
             "projectType": "library",
             "root": "projects/zajsf-bootstrap5",
             "sourceRoot": "projects/zajsf-bootstrap5/src",

@@ -6,7 +6,7 @@ import {
   OnInit,
   ViewEncapsulation
 } from '@angular/core';
-import { JsonSchemaFormService } from '@zajsf/core';
+import { JsonSchemaFormService } from '@stulz/ajsf-core';
 
 /**
 * DaisyUI framework for Angular JSON Schema Form.
@@ -17,8 +17,8 @@ import { JsonSchemaFormService } from '@zajsf/core';
     selector: 'daisyui-framework',
     template: `
 <div>
-  <css-framework [layoutNode]="layoutNode" 
-  [layoutIndex]="layoutIndex" 
+  <css-framework [layoutNode]="layoutNode"
+  [layoutIndex]="layoutIndex"
   [dataIndex]="dataIndex"
   >
   </css-framework>
@@ -50,7 +50,7 @@ constructor(
   public changeDetector: ChangeDetectorRef,
   public jsf: JsonSchemaFormService
 ) {
-  
+
 }
 
 

@@ -1,6 +1,6 @@
 import { ChangeDetectorRef, Component, Input, OnChanges, OnDestroy, OnInit } from '@angular/core';
-import { FrameworkLibraryService, JsonSchemaFormService, isDefined } from '@zajsf/core';
-import { CssframeworkService } from '@zajsf/cssframework';
+import { FrameworkLibraryService, JsonSchemaFormService, isDefined } from '@stulz/ajsf-core';
+import { CssframeworkService } from '@stulz/ajsf-cssframework';
 import cloneDeep from 'lodash/cloneDeep';
 import { Subscription } from 'rxjs';
 import { cssFrameworkCfgMaterialDesign } from './material-design-cssframework';

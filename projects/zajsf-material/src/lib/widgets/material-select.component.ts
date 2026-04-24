@@ -1,7 +1,7 @@
 import { Component, Inject, Input, OnInit, Optional } from '@angular/core';
 import { AbstractControl } from '@angular/forms';
 import { MAT_FORM_FIELD_DEFAULT_OPTIONS } from '@angular/material/form-field';
-import { JsonSchemaFormService, buildTitleMap, isArray } from '@zajsf/core';
+import { JsonSchemaFormService, buildTitleMap, isArray } from '@stulz/ajsf-core';
 
 @Component({
     // tslint:disable-next-line:component-selector

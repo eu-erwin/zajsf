@@ -1,5 +1,5 @@
 import { ChangeDetectorRef, Component, Input, OnChanges, OnInit, ViewEncapsulation } from '@angular/core';
-import { JsonSchemaFormService } from '@zajsf/core';
+import { JsonSchemaFormService } from '@stulz/ajsf-core';
 
 /**
  * Bootstrap 3 framework for Angular JSON Schema Form.
@@ -9,8 +9,8 @@ import { JsonSchemaFormService } from '@zajsf/core';
     selector: 'bootstrap-3-framework',
     template: `
   <div>
-    <css-framework [layoutNode]="layoutNode" 
-    [layoutIndex]="layoutIndex" 
+    <css-framework [layoutNode]="layoutNode"
+    [layoutIndex]="layoutIndex"
     [dataIndex]="dataIndex">
     </css-framework>
   </div>
@@ -32,27 +32,27 @@ export class Bootstrap3FrameworkComponent implements OnInit, OnChanges  {
   @Input() layoutNode: any;
   @Input() layoutIndex: number[];
   @Input() dataIndex: number[];
-  
-  
+
+
   constructor(
     public changeDetector: ChangeDetectorRef,
     public jsf: JsonSchemaFormService
   ) {
   }
-  
-  
-  
+
+
+
   ngOnInit() {
-  
+
   }
-  
+
   ngOnChanges() {
-  
+
   }
-  
-  
-  
-  
-  
-  
+
+
+
+
+
+
   }

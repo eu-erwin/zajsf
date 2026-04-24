@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
-import { JsonSchemaFormService } from '@zajsf/core';
+import { JsonSchemaFormService } from '@stulz/ajsf-core';
 
 
 @Component({

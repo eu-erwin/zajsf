@@ -1,5 +1,5 @@
 import { Inject, Injectable, Optional } from '@angular/core';
-import { CssFramework, CssframeworkService } from '@zajsf/cssframework';
+import { CssFramework, CssframeworkService } from '@stulz/ajsf-cssframework';
 import { cssFrameworkCfgDaisyUI, getCssFrameworkCfgPrefixed } from './daisui-cssframework';
 import { DaisyUIFrameworkComponent } from './daisyui-framework.component';
 import { DaisyUIFrameworkComponentPrefixed } from './daisyui-framework.prefixed.component';
@@ -11,7 +11,7 @@ import { DaisyUITabsComponent } from './widgets/daisyui-tabs.component';
 export class DaisyUIFramework extends CssFramework {
 
 framework=DaisyUIFrameworkComponent;
-  constructor(public cssFWService:CssframeworkService,@Inject(DUIOPTIONS) 
+  constructor(public cssFWService:CssframeworkService,@Inject(DUIOPTIONS)
   //use class prefix by default-doesn't seem to work angular will inject null
   //for TS to use default value, must be undefined
   //-see https://github.com/angular/angular/issues/37306
@@ -29,7 +29,7 @@ framework=DaisyUIFrameworkComponent;
     this.widgets= {
 
       'tabs': DaisyUITabsComponent,
-    
+
     };
   }
 

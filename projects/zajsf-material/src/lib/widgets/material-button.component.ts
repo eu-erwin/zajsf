@@ -1,6 +1,6 @@
 import { Component, Input, OnDestroy, OnInit } from '@angular/core';
 import { AbstractControl } from '@angular/forms';
-import { JsonSchemaFormService, hasOwn } from '@zajsf/core';
+import { JsonSchemaFormService, hasOwn } from '@stulz/ajsf-core';
 import { Subscription } from 'rxjs';
 
 @Component({

@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { AbstractControl } from '@angular/forms';
-import { JsonSchemaFormService } from '@zajsf/core';
+import { JsonSchemaFormService } from '@stulz/ajsf-core';
 
 @Component({
     // tslint:disable-next-line:component-selector
@@ -42,7 +42,7 @@ import { JsonSchemaFormService } from '@zajsf/core';
         }
       </div>
     }
-    
+
     @if (containerType === 'fieldset') {
       <fieldset
         [class]="options?.htmlClass || ''"
@@ -80,7 +80,7 @@ import { JsonSchemaFormService } from '@zajsf/core';
         }
       </fieldset>
     }
-    
+
     @if (containerType === 'card') {
       <mat-card appearance="outlined"
         [ngClass]="options?.htmlClass || ''"
@@ -127,7 +127,7 @@ import { JsonSchemaFormService } from '@zajsf/core';
         </mat-card-footer>
       </mat-card>
     }
-    
+
     @if (containerType === 'expansion-panel') {
       <mat-expansion-panel
         [expanded]="expanded"

@@ -1,4 +1,4 @@
-import { css_fw } from "@zajsf/cssframework";
+import { css_fw } from "@stulz/ajsf-cssframework";
 
 export const cssFrameworkCfgDaisyUI:css_fw.frameworkcfg={
     "name": "daisyui",
@@ -10,13 +10,13 @@ export const cssFrameworkCfgDaisyUI:css_fw.frameworkcfg={
     "widgetstyles": {
         "__themes__": [
             {"name":"daisyui_default","text":"default"},
-            {"name":"light","text":"light"}, 
-            {"name":"dark","text":"dark"}, 
-            {"name":"cupcake","text":"cupcake"}, 
-            {"name":"cmyk","text":"cmyk"}, 
+            {"name":"light","text":"light"},
+            {"name":"dark","text":"dark"},
+            {"name":"cupcake","text":"cupcake"},
+            {"name":"cmyk","text":"cmyk"},
             {"name":"pastel","text":"pastel"},
             {"name":"daisyui_leaf","text":"leaf"}
-            
+
         ],
         "$ref": {
             "fieldHtmlClass": "btn btn-sm btn-accent float-right"
@@ -146,21 +146,21 @@ export const cssFrameworkCfgDaisyUI:css_fw.frameworkcfg={
 //-ones controlled by tailwind will have prefix tw-{{class name}}
 //-ones controlled by daisyui will have prefix tw-dui-{{class name}}
 export function getCssFrameworkCfgPrefixed(cssFrameworkCfg:css_fw.frameworkcfg,prefixDUI="tw-dui",prefixTW="tw"):css_fw.frameworkcfg{
-    
+
     let classNamesIgnored=[
-        
+
         'control-label',
         'help-block','input-group-addon','checkbox-inline'
-        
+
     ];
 
     //TODO use regexs
-    //-regex won't work the actual prefix classname needs to be 
+    //-regex won't work the actual prefix classname needs to be
     //available as string literals as tailwind seems to scans for the
     //actual names so for ex: 'tw-' + 'bg-primary' wont be picked up,
     //has to be 'tw-bg-primary'
 
-    //NB this is not used in code, but need during the taiwind scanning 
+    //NB this is not used in code, but need during the taiwind scanning
     //to output the class names
     let classNamesTW=[
         'w-full','mb-1','shadow-md','p-1',
@@ -175,7 +175,7 @@ export function getCssFrameworkCfgPrefixed(cssFrameworkCfg:css_fw.frameworkcfg,p
         'tw-w-px',
         'tw-max-w-xs','tw-rounded-full','tw-form-control','tw-inline-flex',
         'tw-border'
-        
+
     ];
 
     let classNamesDUI=[
@@ -186,7 +186,7 @@ export function getCssFrameworkCfgPrefixed(cssFrameworkCfg:css_fw.frameworkcfg,p
         'range', 'range-info',
         'select', 'select-md', 'select-bordered',
         'textarea','textarea-bordered'
-        
+
     ];
     let replaceClasses=(classList:string[]|string,prefDUI:string,prefTW:string,ignoredClasses:string[])=>{
         if(!Array.isArray(classList)){
@@ -202,7 +202,7 @@ export function getCssFrameworkCfgPrefixed(cssFrameworkCfg:css_fw.frameworkcfg,p
             return prefTW+"-"+cname;
         });
     }
-    
+
     let cssFrameworkCfgPrefixed=JSON.parse(JSON.stringify(cssFrameworkCfg));
     let widgetNamesIgnore=["__themes__"];
     let widgetNamesNoSubLevel=[
@@ -229,7 +229,7 @@ export function getCssFrameworkCfgPrefixed(cssFrameworkCfg:css_fw.frameworkcfg,p
             classListAsArr=replaceClasses(classListAsArr,prefixDUI,prefixTW,classNamesIgnored);
             widgetClassMap[classListName]=classListAsArr;
         })
-        
+
     })
     return cssFrameworkCfgPrefixed;
 
