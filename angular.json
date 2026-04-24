@@ -109,135 +109,135 @@
             }
         },
         "@stulz/ajsf-core": {
-            "root": "projects/zajsf-core",
-            "sourceRoot": "projects/zajsf-core/src",
+            "root": "projects/stulz-ajsf-core",
+            "sourceRoot": "projects/stulz-ajsf-core/src",
             "projectType": "library",
             "prefix": "",
             "architect": {
                 "build": {
                     "builder": "@angular-devkit/build-angular:ng-packagr",
                     "options": {
-                        "tsConfig": "projects/zajsf-core/tsconfig.lib.json",
-                        "project": "projects/zajsf-core/ng-package.json"
+                        "tsConfig": "projects/stulz-ajsf-core/tsconfig.lib.json",
+                        "project": "projects/stulz-ajsf-core/ng-package.json"
                     },
                     "configurations": {
                         "production": {
-                            "tsConfig": "projects/zajsf-core/tsconfig.lib.prod.json"
+                            "tsConfig": "projects/stulz-ajsf-core/tsconfig.lib.prod.json"
                         }
                     }
                 },
                 "test": {
                     "builder": "@angular-devkit/build-angular:karma",
                     "options": {
-                        "main": "projects/zajsf-core/src/test.ts",
-                        "tsConfig": "projects/zajsf-core/tsconfig.spec.json",
-                        "karmaConfig": "projects/zajsf-core/karma.conf.js"
+                        "main": "projects/stulz-ajsf-core/src/test.ts",
+                        "tsConfig": "projects/stulz-ajsf-core/tsconfig.spec.json",
+                        "karmaConfig": "projects/stulz-ajsf-core/karma.conf.js"
                     }
                 }
             }
         },
         "@stulz/ajsf-bootstrap4": {
             "projectType": "library",
-            "root": "projects/zajsf-bootstrap4",
-            "sourceRoot": "projects/zajsf-bootstrap4/src",
+            "root": "projects/stulz-ajsf-bootstrap4",
+            "sourceRoot": "projects/stulz-ajsf-bootstrap4/src",
             "prefix": "",
             "architect": {
 
                 "build": {
                     "builder": "@angular-devkit/build-angular:ng-packagr",
                     "options": {
-                        "tsConfig": "projects/zajsf-bootstrap4/tsconfig.lib.json",
-                        "project": "projects/zajsf-bootstrap4/ng-package.json"
+                        "tsConfig": "projects/stulz-ajsf-bootstrap4/tsconfig.lib.json",
+                        "project": "projects/stulz-ajsf-bootstrap4/ng-package.json"
                     },
                     "configurations": {
                         "production": {
-                            "tsConfig": "projects/zajsf-bootstrap4/tsconfig.lib.prod.json"
+                            "tsConfig": "projects/stulz-ajsf-bootstrap4/tsconfig.lib.prod.json"
                         }
                     }
                 },
                 "test": {
                     "builder": "@angular-devkit/build-angular:karma",
                     "options": {
-                        "main": "projects/zajsf-bootstrap4/src/test.ts",
-                        "tsConfig": "projects/zajsf-bootstrap4/tsconfig.spec.json",
-                        "karmaConfig": "projects/zajsf-bootstrap4/karma.conf.js"
+                        "main": "projects/stulz-ajsf-bootstrap4/src/test.ts",
+                        "tsConfig": "projects/stulz-ajsf-bootstrap4/tsconfig.spec.json",
+                        "karmaConfig": "projects/stulz-ajsf-bootstrap4/karma.conf.js"
                     }
                 }
             }
         },
         "@stulz/ajsf-bootstrap3": {
             "projectType": "library",
-            "root": "projects/zajsf-bootstrap3",
-            "sourceRoot": "projects/zajsf-bootstrap3/src",
+            "root": "projects/stulz-ajsf-bootstrap3",
+            "sourceRoot": "projects/stulz-ajsf-bootstrap3/src",
             "prefix": "",
             "architect": {
                 "build": {
                     "builder": "@angular-devkit/build-angular:ng-packagr",
                     "options": {
-                        "tsConfig": "projects/zajsf-bootstrap3/tsconfig.lib.json",
-                        "project": "projects/zajsf-bootstrap3/ng-package.json"
+                        "tsConfig": "projects/stulz-ajsf-bootstrap3/tsconfig.lib.json",
+                        "project": "projects/stulz-ajsf-bootstrap3/ng-package.json"
                     },
                     "configurations": {
                         "production": {
-                            "tsConfig": "projects/zajsf-bootstrap3/tsconfig.lib.prod.json"
+                            "tsConfig": "projects/stulz-ajsf-bootstrap3/tsconfig.lib.prod.json"
                         }
                     }
                 },
                 "test": {
                     "builder": "@angular-devkit/build-angular:karma",
                     "options": {
-                        "main": "projects/zajsf-bootstrap3/src/test.ts",
-                        "tsConfig": "projects/zajsf-bootstrap3/tsconfig.spec.json",
-                        "karmaConfig": "projects/zajsf-bootstrap3/karma.conf.js"
+                        "main": "projects/stulz-ajsf-bootstrap3/src/test.ts",
+                        "tsConfig": "projects/stulz-ajsf-bootstrap3/tsconfig.spec.json",
+                        "karmaConfig": "projects/stulz-ajsf-bootstrap3/karma.conf.js"
                     }
                 }
             }
         },
         "@stulz/ajsf-material": {
             "projectType": "library",
-            "root": "projects/zajsf-material",
-            "sourceRoot": "projects/zajsf-material/src",
+            "root": "projects/stulz-ajsf-material",
+            "sourceRoot": "projects/stulz-ajsf-material/src",
             "prefix": "",
             "architect": {
                 "build": {
                     "builder": "@angular-devkit/build-angular:ng-packagr",
                     "options": {
-                        "tsConfig": "projects/zajsf-material/tsconfig.lib.json",
-                        "project": "projects/zajsf-material/ng-package.json"
+                        "tsConfig": "projects/stulz-ajsf-material/tsconfig.lib.json",
+                        "project": "projects/stulz-ajsf-material/ng-package.json"
                     },
                     "configurations": {
                         "production": {
-                            "tsConfig": "projects/zajsf-material/tsconfig.lib.prod.json"
+                            "tsConfig": "projects/stulz-ajsf-material/tsconfig.lib.prod.json"
                         }
                     }
                 },
                 "test": {
                     "builder": "@angular-devkit/build-angular:karma",
                     "options": {
-                        "main": "projects/zajsf-material/src/test.ts",
-                        "tsConfig": "projects/zajsf-material/tsconfig.spec.json",
-                        "karmaConfig": "projects/zajsf-material/karma.conf.js"
+                        "main": "projects/stulz-ajsf-material/src/test.ts",
+                        "tsConfig": "projects/stulz-ajsf-material/tsconfig.spec.json",
+                        "karmaConfig": "projects/stulz-ajsf-material/karma.conf.js"
                     }
                 }
             }
         },
         "@stulz/ajsf-daisyui": {
             "projectType": "library",
-            "root": "projects/zajsf-daisyui",
-            "sourceRoot": "projects/zajsf-daisyui/src",
+            "root": "projects/stulz-ajsf-daisyui",
+            "sourceRoot": "projects/stulz-ajsf-daisyui/src",
             "prefix": "lib",
             "architect": {
                 "build": {
                     "builder": "@angular-devkit/build-angular:ng-packagr",
                     "options": {
-                        "project": "projects/zajsf-daisyui/ng-package.json"
+                        "project": "projects/stulz-ajsf-daisyui/ng-package.json"
                     },
                     "configurations": {
                         "production": {
-                            "tsConfig": "projects/zajsf-daisyui/tsconfig.lib.prod.json"
+                            "tsConfig": "projects/stulz-ajsf-daisyui/tsconfig.lib.prod.json"
                         },
                         "development": {
-                            "tsConfig": "projects/zajsf-daisyui/tsconfig.lib.json"
+                            "tsConfig": "projects/stulz-ajsf-daisyui/tsconfig.lib.json"
                         }
                     },
                     "defaultConfiguration": "production"
@@ -245,7 +245,7 @@
                 "test": {
                     "builder": "@angular-devkit/build-angular:karma",
                     "options": {
-                        "tsConfig": "projects/zajsf-daisyui/tsconfig.spec.json",
+                        "tsConfig": "projects/stulz-ajsf-daisyui/tsconfig.spec.json",
                         "polyfills": [
                             "zone.js",
                             "zone.js/testing"
@@ -256,21 +256,21 @@
         },
         "@stulz/ajsf-cssframework": {
             "projectType": "library",
-            "root": "projects/zajsf-cssframework",
-            "sourceRoot": "projects/zajsf-cssframework/src",
+            "root": "projects/stulz-ajsf-cssframework",
+            "sourceRoot": "projects/stulz-ajsf-cssframework/src",
             "prefix": "lib",
             "architect": {
                 "build": {
                     "builder": "@angular-devkit/build-angular:ng-packagr",
                     "options": {
-                        "project": "projects/zajsf-cssframework/ng-package.json"
+                        "project": "projects/stulz-ajsf-cssframework/ng-package.json"
                     },
                     "configurations": {
                         "production": {
-                            "tsConfig": "projects/zajsf-cssframework/tsconfig.lib.prod.json"
+                            "tsConfig": "projects/stulz-ajsf-cssframework/tsconfig.lib.prod.json"
                         },
                         "development": {
-                            "tsConfig": "projects/zajsf-cssframework/tsconfig.lib.json"
+                            "tsConfig": "projects/stulz-ajsf-cssframework/tsconfig.lib.json"
                         }
                     },
                     "defaultConfiguration": "production"
@@ -278,7 +278,7 @@
                 "test": {
                     "builder": "@angular-devkit/build-angular:karma",
                     "options": {
-                        "tsConfig": "projects/zajsf-cssframework/tsconfig.spec.json",
+                        "tsConfig": "projects/stulz-ajsf-cssframework/tsconfig.spec.json",
                         "polyfills": [
                             "zone.js",
                             "zone.js/testing"
@@ -289,21 +289,21 @@
         },
         "@stulz/ajsf-bootstrap5": {
             "projectType": "library",
-            "root": "projects/zajsf-bootstrap5",
-            "sourceRoot": "projects/zajsf-bootstrap5/src",
+            "root": "projects/stulz-ajsf-bootstrap5",
+            "sourceRoot": "projects/stulz-ajsf-bootstrap5/src",
             "prefix": "lib",
             "architect": {
                 "build": {
                     "builder": "@angular-devkit/build-angular:ng-packagr",
                     "options": {
-                        "project": "projects/zajsf-bootstrap5/ng-package.json"
+                        "project": "projects/stulz-ajsf-bootstrap5/ng-package.json"
                     },
                     "configurations": {
                         "production": {
-                            "tsConfig": "projects/zajsf-bootstrap5/tsconfig.lib.prod.json"
+                            "tsConfig": "projects/stulz-ajsf-bootstrap5/tsconfig.lib.prod.json"
                         },
                         "development": {
-                            "tsConfig": "projects/zajsf-bootstrap5/tsconfig.lib.json"
+                            "tsConfig": "projects/stulz-ajsf-bootstrap5/tsconfig.lib.json"
                         }
                     },
                     "defaultConfiguration": "production"
@@ -311,7 +311,7 @@
                 "test": {
                     "builder": "@angular-devkit/build-angular:karma",
                     "options": {
-                        "tsConfig": "projects/zajsf-bootstrap5/tsconfig.spec.json",
+                        "tsConfig": "projects/stulz-ajsf-bootstrap5/tsconfig.spec.json",
                         "polyfills": [
                             "zone.js",
                             "zone.js/testing"

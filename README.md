@@ -718,18 +718,18 @@ currently the following built-in themes are available(per framework):
 
 for more on how to customize themes, take a look at the relevant framework's docs:
 
-* [`@zajsf/bootstrap3`](./projects/zajsf-bootstrap3/README.md#custom-theming)
+* [`@zajsf/bootstrap3`](projects/stulz-ajsf-bootstrap3/README.md#custom-theming)
 
-* [`@zajsf/bootstrap4`](./projects/zajsf-bootstrap3/README.md#custom-theming)
-
-
-* [`@zajsf/bootstrap5`](./projects/zajsf-bootstrap4/README.md#custom-theming)
+* [`@zajsf/bootstrap4`](projects/stulz-ajsf-bootstrap3/README.md#custom-theming)
 
 
-* [`@zajsf/daisyui`](./projects/zajsf-daisyui/README.md#custom-theming)
+* [`@zajsf/bootstrap5`](projects/stulz-ajsf-bootstrap4/README.md#custom-theming)
 
 
-* [`@zajsf/material`](./projects/zajsf-material/README.md#custom-theming)
+* [`@zajsf/daisyui`](projects/stulz-ajsf-daisyui/README.md#custom-theming)
+
+
+* [`@zajsf/material`](projects/stulz-ajsf-material/README.md#custom-theming)
 
 ## contributing guide
 
@@ -753,7 +753,7 @@ If you like this project and want to contribute you can check this [documentatio
 
 [npm_core_ver_alpha]:https://www.npmjs.com/package/@zajsf/core
 
-[gh_cssframework_project]:./projects/zajsf-cssframework/README.md
+[gh_cssframework_project]:projects/stulz-ajsf-cssframework/README.md
 
 [npm_cssframework_badge]:https://img.shields.io/npm/v/%40zajsf%2Fcssframework.svg?color=#010101
 
@@ -767,7 +767,7 @@ If you like this project and want to contribute you can check this [documentatio
 
 [npm_cssframework_ver_alpha]:https://www.npmjs.com/package/@zajsf/cssframework
 
-[gh_bootstrap3_project]:./projects/zajsf-bootstrap3/README.md
+[gh_bootstrap3_project]:projects/stulz-ajsf-bootstrap3/README.md
 
 [npm_bootstrap3_badge]:https://img.shields.io/npm/v/%40zajsf%2Fbootstrap3.svg?color=#010101
 
@@ -781,7 +781,7 @@ If you like this project and want to contribute you can check this [documentatio
 
 [npm_bootstrap3_ver_alpha]:https://www.npmjs.com/package/@zajsf/bootstrap3
 
-[gh_bootstrap4_project]:./projects/zajsf-bootstrap4/README.md
+[gh_bootstrap4_project]:projects/stulz-ajsf-bootstrap4/README.md
 
 [npm_bootstrap4_badge]:https://img.shields.io/npm/v/%40zajsf%2Fbootstrap4.svg?color=#010101
 
@@ -795,7 +795,7 @@ If you like this project and want to contribute you can check this [documentatio
 
 [npm_bootstrap4_ver_alpha]:https://www.npmjs.com/package/@zajsf/bootstrap4
 
-[gh_bootstrap5_project]:./projects/zajsf-bootstrap5/README.md
+[gh_bootstrap5_project]:projects/stulz-ajsf-bootstrap5/README.md
 
 [npm_bootstrap5_badge]:https://img.shields.io/npm/v/%40zajsf%2Fbootstrap5.svg?color=#010101
 
@@ -809,7 +809,7 @@ If you like this project and want to contribute you can check this [documentatio
 
 [npm_bootstrap5_ver_alpha]:https://www.npmjs.com/package/@zajsf/bootstrap5
 
-[gh_daisyui_project]:./projects/zajsf-daisyui/README.md
+[gh_daisyui_project]:projects/stulz-ajsf-daisyui/README.md
 
 [npm_daisyui_badge]:https://img.shields.io/npm/v/%40zajsf%2Fdaisyui.svg?color=#010101
 
@@ -823,7 +823,7 @@ If you like this project and want to contribute you can check this [documentatio
 
 [npm_daisyui_ver_alpha]:https://www.npmjs.com/package/@zajsf/daisyui
 
-[gh_material_project]:./projects/zajsf-material/README.md
+[gh_material_project]:projects/stulz-ajsf-material/README.md
 
 [npm_material_badge]:https://img.shields.io/npm/v/%40zajsf%2Fmaterial.svg?color=#010101
 
